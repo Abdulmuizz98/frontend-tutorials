@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Bootcamp</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">Frontend Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#learn" class="nav-link">What you'll learn</a></li>
+                    <li class="nav-item"><a href="#questions" class="nav-link">Questions</a></li>
+                    <li class="nav-item"><a href="#instructors" class="nav-link">Instructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a  <span class="text-warning">Web Developer</span> </h1>
+                    <p class="lead my-4">We focus on teaching our students the fundamentals of the latest and greatest technologies to
+                        prepare them fro their first dev role
+                    </p>
+                    <button class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#enroll">Start The Enrollment</button>
+                </div>
+                <img src="nasa.jpg" alt="" class="w-50 d-none d-md-block">
+            </div>
+        </div> 
+    </section>
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Subscriber's email" aria-describedby="button-addon">
+                    <button class="btn btn-lg btn-dark" type="button" id="button-addon">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="mb-3 h1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 mx-auto" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>                        </div>
+                            <h3 class="card-title mb-3">Virtual</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis maxime aliquid quisquam fugiat exercitationem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body">
+                            <div class="mb-3 h1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 mx-auto" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>                        </div>
+                            <h3 class="card-title mb-3">Hybrid</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis maxime aliquid quisquam fugiat exercitationem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="mb-3 h1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 mx-auto" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>                        </div>
+                            <h3 class="card-title mb-3">In Person</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis maxime aliquid quisquam fugiat exercitationem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn sections -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center g-5 justify-content-between">
+                <div class="col-md">
+                    <img src="nasa.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-md-5">
+                    <h2>Learn The Fundamentals</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque perferendis molestiae deserunt autem soluta amet beatae, ipsam, ratione asperiores ipsum, officiis quo corrupti ex delectus reiciendis cumque ad distinctio?</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn React -->
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center g-5 justify-content-between">
+                <div class="col-md p-md-5">
+                    <h2>Learn The Fundamentals</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque perferendis molestiae deserunt autem soluta amet beatae, ipsam, ratione asperiores ipsum, officiis quo corrupti ex delectus reiciendis cumque ad distinctio?</p>
+                    <a href="" class="btn btn-light">Read More</a>
+
+                </div>
+                <div class="col-md">
+                    <img src="nasa.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h1 class="text-center mb-3">Frequently Asked Questions</h1>
+            <div class="accordion accordion-flush" id=#questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="flush-collapseOne">Where exactly are you? located</button>
+                    </h2>
+                </div>
+                <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat quia obcaecati possimus tenetur eum magni eveniet, dicta commodi illum ipsum saepe, labore in aperiam eos inventore, ad veritatis officiis. Aut voluptatibus numquam quas, veniam asperiores, porro laborum sequi architecto quasi sunt obcaecati voluptate, placeat quo quod accusamus pariatur iste.</div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="flush-collapseTwo">How much does it cost to attend?</button>
+                    </h2>
+                </div>
+                <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni aspernatur, exercitationem officiis maxime ratione architecto deserunt ipsam ullam tenetur quidem illum nostrum sequi aliquid reiciendis possimus similique fugit at dolorum debitis soluta eaque. Dicta debitis possimus nisi rerum facere, quasi iusto aperiam error fugiat quaerat qui odit voluptatibus eos?</div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="flush-collapseThree">How do I sign up?</button>
+                    </h2>
+                </div>
+                <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis provident reiciendis? Optio aliquam ratione dolorem, totam et cupiditate aliquid blanditiis tempore? Beatae, rem dolorem molestiae quisquam, totam reprehenderit delectus non a ipsum quam facere adipisci officiis id minima architecto nobis asperiores. Non dolorem dolores perspiciatis repellat odio, optio perferendis.</div>
+                </div>
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" aria-expanded="false" aria-controls="flush-collapseThree">What do I need to know?</button>
+                    </h2>
+                </div>
+                <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis provident reiciendis? Optio aliquam ratione dolorem, totam et cupiditate aliquid blanditiis tempore? Beatae, rem dolorem molestiae quisquam, totam reprehenderit delectus non a ipsum quam facere adipisci officiis id minima architecto nobis asperiores. Non dolorem dolores perspiciatis repellat odio, optio perferendis.</div>
+                </div>
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFiveß">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five" aria-expanded="false" aria-controls="flush-collapseThree">Do you help me find a job?</button>
+                    </h2>
+                </div>
+                <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis provident reiciendis? Optio aliquam ratione dolorem, totam et cupiditate aliquid blanditiis tempore? Beatae, rem dolorem molestiae quisquam, totam reprehenderit delectus non a ipsum quam facere adipisci officiis id minima architecto nobis asperiores. Non dolorem dolores perspiciatis repellat odio, optio perferendis.</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary text-light"> 
+        <div class="container">
+            <h2 class="text-center">Our Instructors</h2>
+            <p class="lead text-center">Our instructors all have 5+ years working as a web developer in the industry</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="muizz.jpg" alt="" class="rounded-circle custom-ar img-fluid mb-3 ">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptates itaque quam consequatur dolore quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="idrees.jpg" alt="" class="rounded-circle custom-ar img-fluid mb-3 ">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptates itaque quam consequatur dolore quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="girl.png" alt="" class="rounded-circle custom-ar img-fluid mb-3 ">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptates itaque quam consequatur dolore quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="mumtaz.jpg" alt="" class="rounded-circle custom-ar img-fluid mb-3 ">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptates itaque quam consequatur dolore quibusdam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-light p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 50 Main st, Boston MA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> (555) 555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> enroll@frontendbc.test
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span> student@frontendbc.test
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+             <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+             <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 mx-auto" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>                        </div>
+
+             </a>
+        </div>
+    </footer>
+    
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+</body>
+</html>

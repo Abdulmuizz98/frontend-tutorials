@@ -1,0 +1,15 @@
+body::before{
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+.custom-ar{
+    width: 150px;
+    height: 150px;
+}
+@media (min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
