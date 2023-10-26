@@ -1,7 +1,6 @@
-$font-stack: Arial, Helvetica, sans-serif;
-$light-color: #f4f4f4;
-$primary-color: #0e6cff;
-$secondary-color: #ff8700;
+@import 'config';
+@import 'utilities';
+@import 'buttons';
 
 *{
     box-sizing: border-box;
@@ -16,17 +15,54 @@ body{
 }
 
 img{
-    width: 100% ;
-}
-.showcase{
-    background-color: $primary-color;
-    color: #fff;
-    height: 600px;
+    width: 100% ;// Set text color based on bg
+    @function set-text-color($color){
+        @if(lightness($color) > 70){
+            @return #333;
+        }
+        @else{
+            @return #fff;
+        }
+    }
+    
 }
 
-.container{
-    max-width: auto;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: auto;
+a{
+    text-decoration: none;
+}
+
+.showcase{
+    @include set-background($primary-color);
+    height: 600px; 
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            padding: 15px;
+        }
+        
+            a{
+                color: white;
+            }
+        a:hover{
+            color: $secondary-color;
+        }
+    }
+
+    // .showcase-content{
+    &-content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+    }
+    
 }

@@ -1,0 +1,40 @@
+.container{
+    max-width: 1400px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color); 
+}  
+
+// Margin and padding classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts{
+    .m-#{space}{
+        margin: #{$space}rem; 
+    }
+    .my-#{space}{
+        margin-top: #{$space}rem;
+        margin-bottom: #{$space}rem;
+    }
+    .mx-#{space}{
+        margin-right: #{$space}rem;
+        margin-left: #{$space}rem;
+    }
+    .p-#{space}{
+        padding: #{$space}rem; 
+    }
+    .py-#{space}{
+        padding-top: #{$space}rem;
+        padding-bottom: #{$space}rem;
+    }
+    .px-#{space}{
+        padding-right: #{$space}rem;
+        padding-left: #{$space}rem;
+    }
+}
